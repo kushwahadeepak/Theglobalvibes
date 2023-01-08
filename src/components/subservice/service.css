@@ -1,0 +1,12 @@
+.card-style {
+    border:none;
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 5px 30px rgb(72 73 121 / 15%);
+    box-shadow: 7px 5px 30px rgb(72 73 121 / 15%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}

@@ -1,0 +1,9 @@
+.navbar-nav{
+     margin-left: auto !important;
+}
+.dropdown-menu{
+     border: none;
+}
+.nav-link{
+ color: rgba(0,0,0,.55) !important;
+}
