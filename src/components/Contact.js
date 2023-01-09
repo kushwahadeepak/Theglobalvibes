@@ -25,7 +25,7 @@ const Contact = () => {
         <>
             <Navbar />
             <div className='container-fluid'>
-                <div className='row mx-3 my-5'>
+                <div className='row mxf my-5'>
                     <div className='col-sm-12 col-md-6'>
                         <div className='style-img'>
                             <img src='./images/contact-us.png' alt='' style={{

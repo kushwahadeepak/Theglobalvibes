@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.mxf{
+  margin: 0 1rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +36,10 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 576px)  {
+  .mxf{
+    margin:0rem !important;
   }
 }

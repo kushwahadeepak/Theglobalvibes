@@ -26,6 +26,7 @@
     position: absolute;
     top: 50px;
     font-size: 15px;
+    color: #fff;
 }
 
 .front h2 {
@@ -50,7 +51,7 @@
 .maincontainer>.back {
     position: absolute;
     transform: perspective(600px) rotateY(180deg);
-    background: #22adb8;
+    background: #4a6365;
     color: #fff;
     width: 340px;
     height: 230px;
@@ -93,7 +94,8 @@
 
 .card-wrapper {
     width: 100%;
-    height: 83%;
+    height: 91%;
+    max-height: 100%;
     border-radius: 5px;
     padding: 3.5rem;
     background: white;
@@ -163,7 +165,9 @@
     margin-top: 8px;
     color: #fff;
 }
-
+.mxs{
+    margin: 0 3rem !important;
+}
 .card-wrapper .info button {
     padding: 0.6rem;
     outline: none;
@@ -499,7 +503,7 @@
         left: 20px;
         top: -45px;
         width: 37% !important;
-        display: block;
+        display: none;
     }
 
     .image-side-text1 {
@@ -511,7 +515,7 @@
         width: 22% !important;
         left: 48px;
         top: 21px;
-        display: block;
+        display: none;
     }
 
     .image-side-text2 {
@@ -523,7 +527,7 @@
         left: 38px;
         top: 61px;
         width: 25% !important;
-        display: block;
+        display:none;
     }
 
     .image-side-text3 {
@@ -535,11 +539,11 @@
         width: 25% !important;
         top: -20px;
         right: 37px;
-        display: block;
+        display: none;
     }
 
     .image-side-text4 {
-          margin: -111px 0px 0px 300px;
+        margin: -190px 0px 0px 214px;
     }
 
     .image-side-line5 {
@@ -547,27 +551,81 @@
         position: absolute;
         width: 25% !important;
         right: 43px;
-        display: block;
+        display: none;
     }
 
     .image-side-text5 {
         position: absolute;
-        left: 105px;
-        top: -26px
+        left: 39px;
+        top: -45px;
     }
 
     .image-side-line6 {
         position: absolute;
         width: 25% !important;
         top: 63px;
-        display: block;
+        display: none;
         right: 37px;
 
     }
 
     .image-side-text6 {
         position: absolute;
-        top: 2px;
-        left: 105px;
+        top: -25px;
+        left: 43px;
     }
+    .maincontainer>.front {
+        position: absolute;
+        transform: perspective(600px) rotateY(0deg);
+        width: 280px !important;
+        height: 290px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+    .maincontainer>.back {
+        position: absolute;
+        transform: perspective(600px) rotateY(180deg);
+        background: #4a6365;
+        color: #fff;
+        width: 280px !important;
+        height: 190px;
+}
+.maincontainer {
+    width: 304px;
+    height: 206px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+.back p {
+    position: absolute;
+    top: 30px;
+    font-size: 14px;
+    color: #FFF;
+}
+h2{
+    font-family: 'Open Sans', Sans Serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.service-home-button-style {
+    margin-top: 124px;
+    padding: 0px 8px !important;
+}
+.card-wrapper {
+    width: 90%;
+    height: 94%;
+}
+.img-experties {
+    width: 23% !important;
+    height: 21% !important;
+    position: relative;
+    top: -104px;
+    left: 25px;
+}
+.pb-5 {
+    padding-bottom: 0rem!important;
+}
+.mxs{
+    margin: 0 !important;
+}
 }

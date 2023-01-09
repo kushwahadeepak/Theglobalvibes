@@ -8,7 +8,7 @@ const Ecommerce = () => {
     <>
       <Navbar/>
       <div className='container my-5'>
-      <div className='row mx-5'>
+      <div className='row mxs'>
         <div className='col-md-4'>
         <ScrollAnimation animateIn="fadeInLeft">
         <div className='img'>
@@ -25,7 +25,7 @@ const Ecommerce = () => {
           </ScrollAnimation>
         </div>
       </div>
-      <div className='row mx-5'>
+      <div className='row mxs'>
         <div className='col-md-4'>
         <ScrollAnimation animateIn="fadeInLeft">
         <div className='img'>
@@ -43,7 +43,7 @@ const Ecommerce = () => {
           </ScrollAnimation>
         </div>
       </div>
-      <div className='row mx-5'>
+      <div className='row mxs'>
         <div className='col-md-4'>
         <ScrollAnimation animateIn="fadeInLeft">
         <div className='img'>

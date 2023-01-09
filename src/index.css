@@ -26,6 +26,7 @@ p{
 	margin:0;
 	padding:0;
 	color: #787878;
+	text-align: justify;
 }
 
 a{
@@ -48,3 +49,10 @@ a:hover,a:active,a:focus {
 ::-moz-focus-inner {
 	border:0;
 }
+
+@media screen and (max-width: 576px) {
+	img.d-block.w-100.img-height {
+		height: 250px !important;
+	}
+}
+
