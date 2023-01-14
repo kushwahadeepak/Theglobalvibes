@@ -1,0 +1,641 @@
+
+*
+/*================= Homepage ======================*/
+
+.carousel-style {
+    height: 100% !important;
+}
+
+/* --------------srevice---------- */
+.maincontainer {
+    width: 302px;
+    height: 250px;
+    /* margin: 10px; */
+    float: left;
+}
+
+/* img {
+    border-radius: 10px;
+} */
+
+/* .back h2 {
+    position: absolute;
+} */
+
+.back p {
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.front h2 {
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer>.front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 340px;
+    height: 290px;
+    backface-visibility: hidden;
+    /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer>.back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #4a6365;
+    color: #fff;
+    width: 340px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.service-home-button-style{
+    margin-top: 162px;
+    border-radius: 30px !important;
+    border: none !important;
+    padding: 3px 10px 3px 10px !important;
+}
+.service-home-button-style:hover{
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 40%);
+    background-color: #283a5e;
+    color: #fff;
+}
+
+/* ------------------blog---------- */
+.style-wrapper {
+    height: 521px !important;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 83%;
+    max-height: 100%;
+    border-radius: 5px;
+    padding: 3.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-wrapper:hover {
+    transform: translateY(10px);
+}
+
+.card-wrapper:hover:before {
+    opacity: 0.9;
+}
+
+.card-wrapper:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.card-wrapper .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.card-wrapper .info h1 {
+    margin: 0px;
+    color: #fff;
+
+}
+
+.card-wrapper .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    color: #fff;
+}
+.mxs{
+    margin: 0 3rem !important;
+}
+.card-wrapper .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+}
+
+.card-wrapper .info button:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+.text-center1 {
+    text-align: center !important;
+    margin-top: 200px !important;
+    margin-right: 85px !important;
+}
+
+/* ===============================contact page css========================== */
+.style-card {
+    border: none;
+    box-shadow: 0px 3px 21px -12px rgb(29 13 26 / 27%);
+    border-radius: 8px;
+}
+
+.input-style {
+    border: none;
+    box-shadow: 0px 3px 42px 7px rgba(79, 75, 75, 0.30);
+}
+
+.form-control:focus {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 25%);
+}
+
+.style-img {
+    box-shadow: -1px -3px 52px 43px rgba(79, 75, 75, 0.28) inset;
+    height:82%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0/25%);
+}
+
+
+/* -----------------section4------------------------ */
+.image1-side-main {
+    position: relative;
+}
+
+.img-experties {
+    width: 75% !important;
+    height: 75% !important;
+}
+
+.image-side-line1 {
+    position: absolute;
+    left: -11px;
+    top: -194px;
+    width: 507px !important;
+    display: block;
+}
+
+.image-side-text1 {
+    margin: -60px 0 8px -45px;
+    color: #fff;
+}
+
+.image-side-line2 {
+    position: absolute;
+    width: 293px !important;
+    left: 107px;
+    top: 11px;
+    display: block;
+}
+
+.image-side-text2 {
+    margin: 55px 0 8px -45px;
+    color: #fff;
+    
+}
+
+.image-side-line3 {
+    position: absolute;
+    left: 68px;
+    top: 122px;
+    width: 328px !important;
+    display: block;
+}
+
+.image-side-text3 {
+    margin: 75px 0 8px -45px;
+    color: #FFF;
+}
+
+.image-side-line4 {
+    position: absolute;
+    width: 330px !important;
+    top: -85px;
+    right: 77px;
+    display: block;
+}
+
+.image-side-text4 {
+    margin: -55px 0 8px 175px;
+    color: #fff;
+}
+
+.image-side-line5 {
+    top: 37px;
+    position: absolute;
+    width: 330px !important;
+    right: 106px;
+    display: block;
+}
+
+.image-side-text5 {
+    margin: 74px 0 8px 175px;
+    color: #fff;
+}
+
+.image-side-line6 {
+    position: absolute;
+    width: 333px !important;
+    top: 121px;
+    display: block;
+    right: 73px;
+}
+
+.image-side-text6 {
+    margin: 100px 0 8px 178px;
+    color: #fff;
+}
+
+/* ==========================start service================================= */
+.services-card-style {
+    border:none;
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 5px 30px rgb(72 73 121 / 15%);
+    box-shadow: 7px 5px 30px rgb(72 73 121 / 15%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.services-card-style:hover {
+    /* -webkit-transform: translateY(-10px); */
+    transform: translateY(-10px);
+}
+.icon-service-style{
+    border:none;
+    line-height:30px;
+    background-color:none;
+}
+.read-more-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    color: #ff6d34;
+    z-index: 1;
+}
+.services-card-style a {
+    outline: 0!important;
+    color: #283a5e;
+    text-decoration: none;
+    -webkit-transition: .4s;
+    transition: .4s;
+    display: inline-block;
+}
+.read-more-btn{
+    border: none;
+    background: transparent;
+    color: #000;
+}
+
+/* ==========================End service================================= */
+
+/*====================================Start About============================= */
+.about-border-top{
+    width: 25%;
+}
+/* .about-border-right{
+
+} */
+/*=============================== End About================================== */
+/* ----------------media query---------------- */
+
+/* @media screen and (max-width: 600px) {
+    .images-style {
+        height: 100% !important;
+        width: 100vw !important;
+    }
+
+    .style-wrapper {
+        height: 100% !important;
+    }
+
+    .text-center1 {
+        text-align: center !important;
+        margin-top: 0px !important;
+        margin-right: 85px !important;
+    }
+
+    .img-experties {
+        width: 25% !important;
+        height: 50% !important;
+         position: absolute;
+        top: 0px; 
+
+    }
+
+    .image-side-heading {
+        font-size: 20px;
+    }
+
+    .image-side-line1 {
+        position: absolute;
+        left: 25px;
+        top: -43px;
+        width: 149px !important;
+        display: block;
+    }
+
+    .image-side-text1 {
+        margin: -13px 0 0px 3px;
+    }
+
+    .image-side-line2 {
+        position: absolute;
+        width: 86px !important;
+        left: 59px;
+        top: 27px;
+        display: block;
+    }
+
+    .image-side-text2 {
+        margin: 17px 0 8px 1px;
+    }
+
+    .image-side-line3 {
+        position: absolute;
+        left: 48px;
+        top: 71px;
+        width: 100px !important;
+        display: block;
+    }
+
+    .image-side-text3 {
+        margin: 14px 0 8px 0px;
+    }
+
+    .image-side-line4 {
+        position: absolute;
+        width: 100px !important;
+        top: -15px;
+        right: 46px;
+        display: block;
+    }
+
+    .image-side-text4 {
+        margin: -129px 0px 0px 351px;
+    }
+
+    .image-side-line5 {
+        top: 33px;
+        position: absolute;
+        width: 100px !important;
+        right: 51px;
+        display: block;
+    }
+
+    .image-side-text5 {
+        position: absolute; 
+        
+        left: 156px;
+        top: -20px;
+    }
+
+    .image-side-line6 {
+        position: absolute;
+        width: 100px !important;
+        top: 70px;
+        display: block;
+        right: 46px;
+
+    }
+
+    .image-side-text6 {
+        position: absolute;
+    top: 11px;
+    left: 156px;
+    }
+}*/
+@media screen and (max-width: 400px) {
+    .images-style {
+        height: 100% !important;
+        width: 100vw !important;
+    }
+
+    .style-wrapper {
+        height: 100% !important;
+    }
+
+    .text-center1 {
+        text-align: center !important;
+        margin-top: 0px !important;
+        margin-right: 85px !important;
+    }
+
+    .img-experties {
+        width: 25% !important;
+        height: 50% !important;
+        position: absolute;
+        top: 0px;
+
+    }
+
+    .image-side-heading {
+        font-size: 15px;
+    }
+
+    .image-side-line1 {
+        position: absolute;
+        left: 20px;
+        top: -45px;
+        width: 37% !important;
+        display: none;
+    }
+
+    .image-side-text1 {
+        margin: -16px 0 0px 0px;
+    }
+
+    .image-side-line2 {
+        position: absolute;
+        width: 22% !important;
+        left: 48px;
+        top: 21px;
+        display: none;
+    }
+
+    .image-side-text2 {
+        margin: 17px 0 8px 1px;
+    }
+
+    .image-side-line3 {
+        position: absolute;
+        left: 38px;
+        top: 61px;
+        width: 25% !important;
+        display:none;
+    }
+
+    .image-side-text3 {
+        margin: 14px 0 8px 0px;
+    }
+
+    .image-side-line4 {
+        position: absolute;
+        width: 25% !important;
+        top: -20px;
+        right: 37px;
+        display: none;
+    }
+
+    .image-side-text4 {
+        margin: -190px 0px 0px 214px;
+    }
+
+    .image-side-line5 {
+        top: 26px;
+        position: absolute;
+        width: 25% !important;
+        right: 43px;
+        display: none;
+    }
+
+    .image-side-text5 {
+        position: absolute;
+        left: 39px;
+        top: -45px;
+    }
+
+    .image-side-line6 {
+        position: absolute;
+        width: 25% !important;
+        top: 63px;
+        display: none;
+        right: 37px;
+
+    }
+
+    .image-side-text6 {
+        position: absolute;
+        top: -25px;
+        left: 43px;
+    }
+    .maincontainer>.front {
+        position: absolute;
+        transform: perspective(600px) rotateY(0deg);
+        width: 280px !important;
+        height: 290px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+    .maincontainer>.back {
+        position: absolute;
+        transform: perspective(600px) rotateY(180deg);
+        background: #4a6365;
+        color: #fff;
+        width: 280px !important;
+        height: 190px;
+}
+.maincontainer {
+    width: 304px;
+    height: 206px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+.back p {
+    position: absolute;
+    top: 30px;
+    font-size: 14px;
+    color: #FFF;
+}
+h2{
+    font-family: 'Open Sans', Sans Serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.service-home-button-style {
+    margin-top: 124px;
+    padding: 0px 8px !important;
+}
+.card-wrapper {
+    width: 90%;
+    height: 94%;
+}
+.img-experties {
+    width: 23% !important;
+    height: 21% !important;
+    position: relative;
+    top: -104px;
+    left: 25px;
+}
+.pb-5 {
+    padding-bottom: 0rem!important;
+}
+.mxs{
+    margin: 0 !important;
+}
+.about-style{
+    width: 100% !important;
+    /* margin-bottom: 18px !important; */
+}
+.mar{
+    margin-bottom: 15px;
+}
+.mar1{
+    margin-top: 15px;
+}
+}
